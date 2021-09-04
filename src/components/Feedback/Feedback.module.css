@@ -1,0 +1,29 @@
+.form {
+  /* display: flex;
+  justify-content: space-be; */
+}
+
+.button {
+  background-color: rgb(125, 197, 197);
+  font-weight: 700;
+
+  border-radius: 4px;
+  border: none;
+
+  width: 100px;
+  height: 30px;
+}
+
+.button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.good {
+}
+
+.statisticsInfo {
+  list-style: none;
+  padding: 0;
+
+  font-weight: 600;
+}
