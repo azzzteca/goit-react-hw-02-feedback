@@ -1,8 +1,3 @@
-.form {
-  /* display: flex;
-  justify-content: space-be; */
-}
-
 .button {
   background-color: rgb(125, 197, 197);
   font-weight: 700;
@@ -18,12 +13,20 @@
   margin-right: 15px;
 }
 
-.good {
-}
-
 .statisticsInfo {
   list-style: none;
   padding: 0;
 
   font-weight: 600;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.itemInfo {
+  font-size: 18px;
+}
+
+.noFeedbackMassage {
+  font-weight: 500;
 }
