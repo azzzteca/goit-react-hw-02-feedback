@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from '../Feedback/Feedback.module.css';
 
 export function Statistics({ total, positivePercentage, good, neutral, bad }) {
@@ -28,3 +29,11 @@ export function Statistics({ total, positivePercentage, good, neutral, bad }) {
     </div>
   );
 }
+
+Statistics.propTypes = {
+  total: PropTypes.func,
+  positivePercentage: PropTypes.func,
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+};

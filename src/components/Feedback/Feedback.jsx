@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Section } from './Section';
 import { Statistics } from './Statistics';
 import { FeedbackOptions } from './FeedbackOptions';
@@ -11,17 +12,25 @@ function Feedback({ feedback, changeCoutFeedback }) {
 
   return (
     <div>
-      <Section title="Please leave feedback" />
-      <FeedbackOptions changeCoutFeedback={changeCoutFeedback} />
-      <Statistics
-        good={good}
-        neutral={neutral}
-        bad={bad}
-        total={countTotalFeedback}
-        positivePercentage={countPositiveFeedbackPercentage}
-      />
+      <Section title="Please leave feedback">
+        <FeedbackOptions changeCoutFeedback={changeCoutFeedback} />
+        <Statistics
+          good={good}
+          neutral={neutral}
+          bad={bad}
+          total={countTotalFeedback}
+          positivePercentage={countPositiveFeedbackPercentage}
+        />
+      </Section>
     </div>
   );
 }
 
 export default Feedback;
+
+Feedback.propTypes = {
+  changeCoutFeedback: PropTypes.func,
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+};

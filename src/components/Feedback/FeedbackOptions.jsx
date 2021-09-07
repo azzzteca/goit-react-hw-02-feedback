@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from './Feedback.module.css';
 
 export function FeedbackOptions({ changeCoutFeedback }) {
@@ -15,3 +16,7 @@ export function FeedbackOptions({ changeCoutFeedback }) {
     </form>
   );
 }
+
+FeedbackOptions.propTypes = {
+  changeCoutFeedback: PropTypes.func,
+};
